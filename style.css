@@ -294,3 +294,59 @@ footer {
     background: #55ACEE;
     color: white;
   }
+/*responsive sit*/
+/*  Responsive Adjustments */
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 180px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .social-icons a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+
+
