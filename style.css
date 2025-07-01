@@ -296,15 +296,17 @@ footer {
   }
 /*responsive sit*/
 /* === Responsive for tablets and phones === */
+/* 🌟 Fix container background */
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
 
+/* 🌟 Make sure about section stacks vertically */
 @media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
   .about-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -312,28 +314,36 @@ footer {
   }
 
   .about-content img {
-    width: 150px;
+    width: 150px !important;
     height: auto;
     margin-bottom: 15px;
   }
 
+  .about-content p {
+    max-width: 90%;
+  }
+
   .skills-container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    justify-items: center;
   }
 }
 
 @media (max-width: 480px) {
-  header nav ul {
-    gap: 8px;
-  }
-
   .about-content img {
-    width: 120px;
+    width: 120px !important;
   }
 
   .skills-container {
     grid-template-columns: 1fr;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 
   h1 {
@@ -360,19 +370,5 @@ footer {
     justify-content: center;
   }
 }
-
-/* Extra: Fix body background */
-body {
-  background-color: #fff; /* or your main background color */
-}
-
-/* Optional: Add container width restriction for all content */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-
 
 
