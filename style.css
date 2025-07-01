@@ -295,36 +295,49 @@ footer {
     color: white;
   }
 /*responsive sit*/
-/*  Responsive Adjustments */
+/* === Responsive for tablets and phones === */
 
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .about-content {
     flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 20px;
   }
 
   .about-content img {
-    width: 180px;
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
   }
 
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
 @media (max-width: 480px) {
+  header nav ul {
+    gap: 8px;
+  }
+
+  .about-content img {
+    width: 120px;
+  }
+
   .skills-container {
     grid-template-columns: 1fr;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   p {
@@ -339,12 +352,25 @@ footer {
 @media (max-width: 600px) {
   .footer-content {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
+
   .social-icons {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+/* Extra: Fix body background */
+body {
+  background-color: #fff; /* or your main background color */
+}
+
+/* Optional: Add container width restriction for all content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 
