@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+}
+.logo{
+    color: beige;
+    font-size: 42px;
+}
+
+.container{
+    padding: 10px 10%;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: beige;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: beige;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.main{
+    background-color: beige;
+    width: auto;
+    padding: 35px;
+}
+
+.myself{
+    /*background-color: rgb(199, 192, 192);*/
+    height: 60vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    /*font-family: "Raleway", sans-serif;*/
+    font-family: "Kanchenjunga", sans-serif;
+}
+
+.mypic img{
+    height: 65vh;
+    width: 70vh;
+    border-radius: 50%;
+
+}
+
+.myinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 50px;
+    /*font-family: "Raleway", sans-serif;*/
+}
+
+.name{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Kanchenjunga", sans-serif;
+}
+
+.about{
+    font-size: 50px;
+    /*font-family: "Raleway", sans-serif;*/
+}
+.moreabout{
+    font-size: 30px;
+}
+.buttons{
+    margin-top: 30px;
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(77, 70, 70);
+    font-weight: bold;
+    font-size: 21px;
+    margin: 3px;
+    cursor: pointer;
+}
+ .buttons button:hover{
+    background-color: white;
+    color: rgb(77, 70, 70);
+ }
+
+.bhumi{
+    background-color: beige;
+    font-family: "Kanchenjunga", sans-serif;
+    font-size: 30px;
+}
+/* about section*/
+#about{
+    padding: 80px ;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ac1{
+    flex-basis: 35%;
+}
+.ac1 img{
+    height: 57vh;
+    border-radius: 50%;
+}
+.ac2{
+    flex-basis: 65%;
+}
+.sub-title{
+    font-size: 65px;
+    font-weight: bold;
+}
+/*.about1{
+    width: 100vw;
+    padding: 40px;
+}
+.ac2{
+    width: 87vw;
+    padding: 32px;
+    margin: 49px;
+}*/
+/*skills--------------------*/
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 50px;
+    perspective: 1000px; /*imp for 3d*/
+}
+
+.skill{
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+@keyframes rotateY{
+    from{
+        transform:rotateY(0 deg);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+ }
+.skill img{
+    width: 100px;
+    height: 100px;
+    animation: rotateY 3s linear infinite;
+    transform-style:preserve-3d;
+    /*backface-visibility: hidden; transparecy*/
+}
+
+.skill p{
+    margin-top: 5px;
+}
+/*certificates*/
+.certi1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        justify-items: center;
+        margin-top: 50px;
+}
+.certi1 img{
+    height: 45vh;
+    width: 60vh;
+}
+/*contact form styling*/
+.cc1{
+    font-size: 35px;
+    font-weight: bold;
+    /*flex-basis: 60%;*/
+    text-align: center;
+}
+.contactform{
+    padding: 0 34px;
+}
+.contactform form div{
+    padding: 0px 0;
+ }
+.contactform form div input{
+    width: 27vw;
+    border-radius: 5px;
+    margin: 9px;
+    padding: 6px;
+}
+ 
+ #emailHelp{
+    font-size: 15px;
+    color:grey;
+    margin: 0 5px;
+ }
+/*footer-----------*/
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.social-icons {
+    margin-bottom: 10px;
+  }
+  
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #0abde3; /* change color on hover if you like */
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+
+-----------------
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+/*responsive for phones*/
+/* Add these @media queries to your existing CSS file */
+
+/* First, add these base styles if not already present */
+
+/* Mobile Responsive Styles */
+/* Add this to your existing CSS file */
+
+/* Base responsive setup */
+
+
+/* Tablet and smaller laptops (768px and below) */
+/* Base fixes */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Make about section stack on small screens */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .about-content img {
+      width: 150px;
+    }
+  
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  
+  /* Mobile (phones) */
+  @media (max-width: 480px) {
+    .about-content img {
+      width: 120px;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    header nav ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background-color: #111; /* optional: dark background to make items visible */
+      padding: 10px 0;
+      width: 100%;
+    }
+  
+    header nav ul li a {
+      color: #fff !important; /* force white text so it is visible */
+      text-decoration: none;
+      font-size: 18px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
