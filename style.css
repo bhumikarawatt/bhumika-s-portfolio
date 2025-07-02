@@ -79,7 +79,7 @@ nav ul li a:hover::after{
 
 .mypic img{
     height: 65vh;
-    width: 65vh;
+    width: 150vh;
     border-radius: 50%;
 
 }
