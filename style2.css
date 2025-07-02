@@ -372,13 +372,30 @@ header nav ul {
     gap: 20px;
     list-style: none;
 }
+/* =================== */
+/* NAVIGATION FINAL FIX */
+/* =================== */
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #111; /* so links are visible */
+    background-color: #111;
     width: 100%;
     padding: 10px 0;
   }
@@ -388,5 +405,27 @@ header nav ul {
     display: block;
     text-align: center;
     padding: 8px 0;
+    font-size: 18px;
   }
 }
+
+/* =================== */
+/* CERTIFICATES SECTION FIX */
+/* =================== */
+
+@media (max-width: 768px) {
+  .certificates-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .certificate {
+    width: 90%;
+  }
+
+  .certificate img {
+    width: 100%;
+    height: auto;
+  }
