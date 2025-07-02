@@ -295,6 +295,20 @@ footer {
     color: white;
   }
 /*responsive sit*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 /* === Responsive for tablets and phones === */
 /* 🌟 Fix container background */
 
