@@ -375,29 +375,16 @@ header nav ul {
 /* =================== */
 /* NAVIGATION FINAL FIX */
 /* =================== */
-
-header nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    gap: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-}
-
 @media (max-width: 768px) {
   header nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background-color: #111;
-    width: 100%;
-    padding: 10px 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    background-color: #111 !important;
+    width: 100% !important;
+    padding: 10px 0 !important;
   }
 
   header nav ul li a {
@@ -408,24 +395,3 @@ header nav ul li a {
     font-size: 18px;
   }
 }
-
-/* =================== */
-/* CERTIFICATES SECTION FIX */
-/* =================== */
-
-@media (max-width: 768px) {
-  .certificates-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .certificate {
-    width: 90%;
-  }
-
-  .certificate img {
-    width: 100%;
-    height: auto;
-  }
