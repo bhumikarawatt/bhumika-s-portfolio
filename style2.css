@@ -365,23 +365,30 @@ footer {
       font-size: 14px;
     }
   }
-  @media (max-width: 768px) {
-    header nav ul {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: #111; /* optional: dark background to make items visible */
-      padding: 10px 0;
-      width: 100%;
-    }
-  
-    header nav ul li a {
-      color: #fff !important; /* force white text so it is visible */
-      text-decoration: none;
-      font-size: 18px;
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #111;
+    padding: 10px 0;
+    width: 100%;
   }
+
+  header nav ul li a {
+    color: #fff !important;
+    display: block;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 18px;
+  }
+}
